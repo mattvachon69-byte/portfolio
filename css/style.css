@@ -460,16 +460,10 @@ img {
   font-size: 1.05rem;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.contact-info {
+.contact-info-centered {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 }
 

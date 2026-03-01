@@ -232,15 +232,3 @@ function setupScrollAnimations() {
   document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 }
 
-// ============================================================
-// CONTACT FORM (mailto via JS, no security warning)
-// ============================================================
-document.getElementById("contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-  const subject = encodeURIComponent("Contact portfolio — " + name);
-  const body = encodeURIComponent("De : " + name + "\nEmail : " + email + "\n\n" + message);
-  window.location.href = "mailto:matt.vachon69@gmail.com?subject=" + subject + "&body=" + body;
-});
