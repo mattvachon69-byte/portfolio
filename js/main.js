@@ -5,17 +5,16 @@
 // ============================================================
 const photos = [
   // --- Football ---
-  { src: "photos/football/DSC03145.JPEG", category: "football", title: "Action de jeu",       date: "2025", location: "" },
-  { src: "photos/football/DSC03230.JPEG", category: "football", title: "Intensité",           date: "2025", location: "" },
-  { src: "photos/football/DSC03249.JPEG", category: "football", title: "Duel",                date: "2025", location: "" },
-  { src: "photos/football/DSC03276.JPEG", category: "football", title: "Frappe",              date: "2025", location: "" },
-  { src: "photos/football/IMG_1538.JPEG", category: "football", title: "Concentration",       date: "2025", location: "" },
-  { src: "photos/football/IMG_1541.JPEG", category: "football", title: "Engagement",          date: "2025", location: "" },
-  { src: "photos/football/IMG_1565.JPEG", category: "football", title: "Course",              date: "2025", location: "" },
-  { src: "photos/football/IMG_1713.JPEG", category: "football", title: "Contre-attaque",      date: "2025", location: "" },
-  { src: "photos/football/IMG_1717.JPEG", category: "football", title: "Face à face",         date: "2025", location: "" },
-  { src: "photos/football/IMG_1719.JPEG", category: "football", title: "Accélération",        date: "2025", location: "" },
-  { src: "photos/football/IMG_1723.JPEG", category: "football", title: "Célébration",         date: "2025", location: "" },
+  { src: "photos/football/DSC03145.JPEG", category: "football", title: "Contrôle du ballon",   date: "2025", location: "" },
+  { src: "photos/football/DSC03230.JPEG", category: "football", title: "Course en puissance",  date: "2025", location: "" },
+  { src: "photos/football/DSC03249.JPEG", category: "football", title: "Bras levés",           date: "2025", location: "" },
+  { src: "photos/football/DSC03276.JPEG", category: "football", title: "Clair-obscur",         date: "2025", location: "" },
+  { src: "photos/football/IMG_1538.JPEG", category: "football", title: "Jongles",              date: "2025", location: "" },
+  { src: "photos/football/IMG_1541.JPEG", category: "football", title: "Crépuscule",           date: "2025", location: "" },
+  { src: "photos/football/IMG_1565.JPEG", category: "football", title: "Duel intense",         date: "2025", location: "" },
+  { src: "photos/football/IMG_1713.JPEG", category: "football", title: "Joie collective",      date: "2025", location: "" },
+  { src: "photos/football/IMG_1717.JPEG", category: "football", title: "Accolade",             date: "2025", location: "" },
+  { src: "photos/football/IMG_1723.JPEG", category: "football", title: "Unité",                date: "2025", location: "" },
 ];
 
 // ============================================================
