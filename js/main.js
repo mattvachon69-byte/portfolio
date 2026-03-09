@@ -15,7 +15,7 @@ const photos = [
   { src: "photos/football/IMG_1541.JPEG",  category: "football", title: "Crépuscule",          date: "2025", location: "" },
   { src: "photos/football/IMG_1565.JPEG",  category: "football", title: "Duel intense",        date: "2025", location: "" },
   { src: "photos/football/image00046.jpeg", category: "football", title: "Joie du but",        date: "2026", location: "" },
-  { src: "photos/football/image00050.jpeg", category: "football", title: "Étreinte",           date: "2026", location: "" },
+  { src: "photos/football/DSC03971.JPG",    category: "football", title: "Frappe",              date: "2026", location: "La Duchère" },
   { src: "photos/football/IMG_1723.JPEG",  category: "football", title: "Unité",               date: "2025", location: "" },
 ];
 
