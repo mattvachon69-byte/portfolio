@@ -4,19 +4,20 @@
 // puis ajouter une entrée dans ce tableau.
 // ============================================================
 const photos = [
-  // --- Football ---
-  { src: "photos/football/DSC03276.JPEG",  category: "football", title: "Clair-obscur",         date: "2025", location: "" },
-  { src: "photos/football/image00001.jpeg", category: "football", title: "Sur le banc",        date: "2026", location: "" },
-  { src: "photos/football/image00039.jpeg", category: "football", title: "À terre",            date: "2026", location: "" },
-  { src: "photos/football/image00066.jpeg", category: "football", title: "Détermination",      date: "2026", location: "" },
-  { src: "photos/football/IMG_1717.JPEG",  category: "football", title: "Accolade",            date: "2025", location: "" },
-  { src: "photos/football/DSC03145.JPEG",  category: "football", title: "Contrôle du ballon",  date: "2025", location: "" },
-  { src: "photos/football/DSC03230.JPEG",  category: "football", title: "Course en puissance", date: "2025", location: "" },
-  { src: "photos/football/IMG_1541.JPEG",  category: "football", title: "Crépuscule",          date: "2025", location: "" },
-  { src: "photos/football/IMG_1565.JPEG",  category: "football", title: "Duel intense",        date: "2025", location: "" },
-  { src: "photos/football/image00046.jpeg", category: "football", title: "Joie du but",        date: "2026", location: "" },
-  { src: "photos/football/IMG_1723.JPEG",  category: "football", title: "Unité",               date: "2025", location: "" },
-  { src: "photos/football/image00015.jpeg", category: "football", title: "Focus",              date: "2026", location: "" },
+  { src: "photos/gallery/DSC03145.JPEG",  category: "football", title: "Contrôle du ballon",  date: "2026", location: "" },
+  { src: "photos/gallery/DSC03276.JPEG",  category: "football", title: "Clair-obscur",        date: "2026", location: "" },
+  { src: "photos/gallery/DSC03803.JPEG",  category: "football", title: "Intensité",           date: "2026", location: "" },
+  { src: "photos/gallery/DSC03996.JPEG",  category: "football", title: "En action",           date: "2026", location: "" },
+  { src: "photos/gallery/DSC04300.JPEG",  category: "football", title: "Détermination",       date: "2026", location: "" },
+  { src: "photos/gallery/DSC04599.JPEG",  category: "football", title: "Duel",                date: "2026", location: "" },
+  { src: "photos/gallery/DSC04605.JPEG",  category: "football", title: "Puissance",           date: "2026", location: "" },
+  { src: "photos/gallery/DSC04884.JPEG",  category: "football", title: "Focus",               date: "2026", location: "" },
+  { src: "photos/gallery/DSC04896.JPEG",  category: "football", title: "Percussion",          date: "2026", location: "" },
+  { src: "photos/gallery/DSC05154.JPEG",  category: "football", title: "Concentration",       date: "2026", location: "" },
+  { src: "photos/gallery/DSC05260.JPEG",  category: "football", title: "Course",              date: "2026", location: "" },
+  { src: "photos/gallery/DSC05344.JPEG",  category: "football", title: "Victoire",            date: "2026", location: "" },
+  { src: "photos/gallery/IMG_1713.JPEG",  category: "football", title: "Accolade",            date: "2026", location: "" },
+  { src: "photos/gallery/IMG_1723.JPEG",  category: "football", title: "Unité",               date: "2026", location: "" },
 ];
 
 // ============================================================
