@@ -5,11 +5,10 @@
 // ============================================================
 const photos = [
   // — Page principale (mix tous sports) —
+  { src: "photos/principale/8C9D1B22-A074-4CA9-9C3F-E19021C2D015.JPEG", category: "principale", title: "Portrait",     date: "2026" },
   { src: "photos/principale/DSC03276 (1).JPEG", category: "principale", title: "Clair-obscur",     date: "2026" },
   { src: "photos/principale/DSC03803.JPEG",     category: "principale", title: "Intensité",        date: "2026" },
-  { src: "photos/principale/DSC03996.JPEG",     category: "principale", title: "En action",        date: "2026" },
   { src: "photos/principale/DSC04599.JPEG",     category: "principale", title: "Duel",             date: "2026" },
-  { src: "photos/principale/DSC04884.JPEG",     category: "principale", title: "Focus",            date: "2026" },
   { src: "photos/principale/DSC05154.JPEG",     category: "principale", title: "Concentration",    date: "2026" },
   { src: "photos/principale/DSC06348 (1).JPEG", category: "principale", title: "Élan",             date: "2026" },
   { src: "photos/principale/DSC06739.JPEG",     category: "principale", title: "Impulsion",        date: "2026" },
@@ -17,7 +16,12 @@ const photos = [
   { src: "photos/principale/DSC07285.JPEG",     category: "principale", title: "Détermination",    date: "2026" },
   { src: "photos/principale/DSC07757.JPEG",     category: "principale", title: "Percussion",       date: "2026" },
   { src: "photos/principale/DSC07791.JPEG",     category: "principale", title: "Engagement",       date: "2026" },
-  { src: "photos/principale/IMG_1723 (1).JPEG", category: "principale", title: "Unité",            date: "2026" },
+  { src: "photos/principale/DSC08402.JPEG",     category: "principale", title: "Action",           date: "2026" },
+  { src: "photos/principale/DSC08483.JPEG",     category: "principale", title: "Mouvement",        date: "2026" },
+  { src: "photos/principale/DSC08955.JPEG",     category: "principale", title: "Vitesse",          date: "2026" },
+  { src: "photos/principale/DSC09019.JPEG",     category: "principale", title: "Effort",           date: "2026" },
+  { src: "photos/principale/DSC09033.JPEG",     category: "principale", title: "Engagement",       date: "2026" },
+  { src: "photos/principale/DSC09035.JPEG",     category: "principale", title: "Combat",           date: "2026" },
 
   // — Versailles —
   { src: "photos/versailles/DSC07181 - Copie.JPEG", category: "versailles", title: "Ouverture",    date: "2026" },
@@ -70,17 +74,42 @@ const photos = [
   { src: "photos/asvel/DSC06772.JPEG",      category: "asvel", title: "Tir extérieur",    date: "2026" },
   { src: "photos/asvel/DSC06842.JPEG",      category: "asvel", title: "Alley-oop",        date: "2026" },
   { src: "photos/asvel/DSC06906.JPEG",      category: "asvel", title: "Célébration",      date: "2026" },
+
+  // — OL Réserve —
+  { src: "photos/ol-reserve/DSC08208.JPEG", category: "ol-reserve", title: "Coup d'envoi",    date: "2026" },
+  { src: "photos/ol-reserve/DSC08415.JPEG", category: "ol-reserve", title: "Construction",    date: "2026" },
+  { src: "photos/ol-reserve/DSC08881.JPEG", category: "ol-reserve", title: "Pressing",        date: "2026" },
+  { src: "photos/ol-reserve/DSC08930.JPEG", category: "ol-reserve", title: "Duel",            date: "2026" },
+  { src: "photos/ol-reserve/DSC08955.JPEG", category: "ol-reserve", title: "Frappe",          date: "2026" },
+  { src: "photos/ol-reserve/DSC09008.JPEG", category: "ol-reserve", title: "Centre",          date: "2026" },
+  { src: "photos/ol-reserve/DSC09019.JPEG", category: "ol-reserve", title: "Engagement",      date: "2026" },
+  { src: "photos/ol-reserve/DSC09033.JPEG", category: "ol-reserve", title: "Tacle",           date: "2026" },
+  { src: "photos/ol-reserve/DSC09035.JPEG", category: "ol-reserve", title: "Récupération",   date: "2026" },
+  { src: "photos/ol-reserve/DSC09057.JPEG", category: "ol-reserve", title: "Célébration",     date: "2026" },
+
+  // — Clermont Jeune —
+  { src: "photos/clermont-jeune/DSC08051.JPEG", category: "clermont-jeune", title: "Échauffement",  date: "2026" },
+  { src: "photos/clermont-jeune/DSC08125.JPEG", category: "clermont-jeune", title: "Placement",     date: "2026" },
+  { src: "photos/clermont-jeune/DSC08172.JPEG", category: "clermont-jeune", title: "Transition",    date: "2026" },
+  { src: "photos/clermont-jeune/DSC08258.JPEG", category: "clermont-jeune", title: "Dribble",       date: "2026" },
+  { src: "photos/clermont-jeune/DSC08258 (1).JPEG", category: "clermont-jeune", title: "Action",   date: "2026" },
+  { src: "photos/clermont-jeune/DSC08398.JPEG", category: "clermont-jeune", title: "Frappe",        date: "2026" },
+  { src: "photos/clermont-jeune/DSC08402.JPEG", category: "clermont-jeune", title: "Duel",          date: "2026" },
+  { src: "photos/clermont-jeune/DSC08480.JPEG", category: "clermont-jeune", title: "Percussion",    date: "2026" },
+  { src: "photos/clermont-jeune/DSC08483.JPEG", category: "clermont-jeune", title: "Engagement",    date: "2026" },
 ];
 
 // ============================================================
 // CATEGORY LABELS (display name for filter buttons)
 // ============================================================
 const categoryLabels = {
-  principale: "Tous",
-  versailles: "Versailles",
-  duchere:    "Duchère",
-  dijon:      "Dijon DFCO",
-  asvel:      "ASVEL",
+  principale:       "Tous",
+  versailles:       "Versailles",
+  duchere:          "Duchère",
+  dijon:            "Dijon DFCO",
+  asvel:            "ASVEL",
+  "ol-reserve":     "OL Réserve",
+  "clermont-jeune": "Clermont Jeunes",
 };
 
 // ============================================================
