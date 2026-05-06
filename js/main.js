@@ -99,7 +99,7 @@ const photos = [
   { src: "photos/clermont-jeune/DSC08483.JPEG", category: "clermont-jeune", title: "Engagement",    date: "2026" },
 
   // — Graphisme —
-  { src: "photos/graphisme/61A8FEB3-7F35-4134-BA19-3EC0ED67D0C1.PNG", category: "graphisme", title: "Visuel", date: "2026" },
+  { src: "photos/graphisme/487661C2-9D51-44F3-A9D6-9649F123D9E1.PNG", category: "graphisme", title: "Visuel", date: "2026" },
 ];
 
 // ============================================================
