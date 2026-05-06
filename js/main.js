@@ -99,10 +99,7 @@ const photos = [
   { src: "photos/clermont-jeune/DSC08483.JPEG", category: "clermont-jeune", title: "Engagement",    date: "2026" },
 
   // — Graphisme —
-  { src: "photos/graphisme/4AFAFF9E-3087-4BB0-931A-8829D398A9AB.PNG", category: "graphisme", title: "Visuel 01", date: "2026" },
-  { src: "photos/graphisme/62361774-27A2-480B-B9B4-B288D141BDF5.PNG", category: "graphisme", title: "Visuel 02", date: "2026" },
-  { src: "photos/graphisme/892220E1-96A1-4BD9-854D-733ECEA87087.PNG", category: "graphisme", title: "Visuel 03", date: "2026" },
-  { src: "photos/graphisme/9F0090C3-66F7-4380-A907-CF0731783861.PNG", category: "graphisme", title: "Visuel 04", date: "2026" },
+  { src: "photos/graphisme/61A8FEB3-7F35-4134-BA19-3EC0ED67D0C1.PNG", category: "graphisme", title: "Visuel", date: "2026" },
 ];
 
 // ============================================================
