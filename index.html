@@ -10,7 +10,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260428b">
+  <link rel="stylesheet" href="css/style.css?v=20260506c">
+  <script>
+    // Force-reload si le HTML est servi depuis un cache trop vieux
+    (function(){
+      var EXPECTED_VERSION = "20260506c";
+      try {
+        var stored = localStorage.getItem("siteVersion");
+        if (stored !== EXPECTED_VERSION) {
+          localStorage.setItem("siteVersion", EXPECTED_VERSION);
+          if (stored) {
+            // L'utilisateur arrive avec un autre version stocké → forcer un reload propre
+            var url = new URL(location.href);
+            url.searchParams.set("_v", EXPECTED_VERSION);
+            location.replace(url.toString());
+          }
+        }
+      } catch(e) {}
+    })();
+  </script>
 </head>
 <body>
 
@@ -129,6 +147,6 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=20260506a"></script>
+  <script src="js/main.js?v=20260506c"></script>
 </body>
 </html>
