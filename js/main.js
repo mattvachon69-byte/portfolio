@@ -6,9 +6,9 @@
 const photos = [
   // — Page principale (mix tous sports) —
   { src: "photos/principale/8C9D1B22-A074-4CA9-9C3F-E19021C2D015.JPEG", category: "principale", title: "Portrait",     date: "2026" },
-  { src: "photos/principale/DSC03276 (1).JPEG", category: "principale", title: "Clair-obscur",     date: "2026" },
+  { src: "photos/principale/DSC00674.JPEG",     category: "principale", title: "Clair-obscur",     date: "2026" },
+  { src: "photos/principale/DSC01034.JPEG",     category: "principale", title: "Engagement",       date: "2026" },
   { src: "photos/principale/DSC03803.JPEG",     category: "principale", title: "Intensité",        date: "2026" },
-  { src: "photos/principale/DSC04599.JPEG",     category: "principale", title: "Duel",             date: "2026" },
   { src: "photos/principale/DSC05154.JPEG",     category: "principale", title: "Concentration",    date: "2026" },
   { src: "photos/principale/DSC06348 (1).JPEG", category: "principale", title: "Élan",             date: "2026" },
   { src: "photos/principale/DSC06739.JPEG",     category: "principale", title: "Impulsion",        date: "2026" },
@@ -35,13 +35,13 @@ const photos = [
   { src: "photos/versailles/DSC07824.JPEG",          category: "versailles", title: "Célébration",  date: "2026" },
 
   // — Duchère —
-  { src: "photos/duchere/image00001.jpeg", category: "duchere", title: "Coup d'envoi",   date: "2026" },
-  { src: "photos/duchere/image00009.jpeg", category: "duchere", title: "Interception",   date: "2026" },
-  { src: "photos/duchere/image00011.jpeg", category: "duchere", title: "Relance",        date: "2026" },
-  { src: "photos/duchere/image00015.jpeg", category: "duchere", title: "Tacle",          date: "2026" },
-  { src: "photos/duchere/image00039.jpeg", category: "duchere", title: "Centre",         date: "2026" },
-  { src: "photos/duchere/image00046.jpeg", category: "duchere", title: "Tête",           date: "2026" },
-  { src: "photos/duchere/image00050.jpeg", category: "duchere", title: "Contre-attaque", date: "2026" },
+  { src: "photos/duchere/DSC00752.JPEG",   category: "duchere", title: "Coup d'envoi",   date: "2026" },
+  { src: "photos/duchere/DSC00756.JPEG",   category: "duchere", title: "Interception",   date: "2026" },
+  { src: "photos/duchere/DSC00770.JPEG",   category: "duchere", title: "Relance",        date: "2026" },
+  { src: "photos/duchere/image00001.jpeg", category: "duchere", title: "Tacle",          date: "2026" },
+  { src: "photos/duchere/image00015.jpeg", category: "duchere", title: "Centre",         date: "2026" },
+  { src: "photos/duchere/image00039.jpeg", category: "duchere", title: "Tête",           date: "2026" },
+  { src: "photos/duchere/image00046.jpeg", category: "duchere", title: "Contre-attaque", date: "2026" },
   { src: "photos/duchere/image00054.jpeg", category: "duchere", title: "Débordement",    date: "2026" },
   { src: "photos/duchere/image00066.jpeg", category: "duchere", title: "Intensité",      date: "2026" },
 
@@ -98,6 +98,14 @@ const photos = [
   { src: "photos/clermont-jeune/DSC08480.JPEG", category: "clermont-jeune", title: "Percussion",    date: "2026" },
   { src: "photos/clermont-jeune/DSC08483.JPEG", category: "clermont-jeune", title: "Engagement",    date: "2026" },
 
+  // — Géorgie (Div 1) —
+  { src: "photos/georgie/53AF08BC-9215-4C2F-84CF-86FB94502017.JPEG", category: "georgie", title: "Action",      date: "2026" },
+  { src: "photos/georgie/DSC01034.JPEG", category: "georgie", title: "Engagement", date: "2026" },
+  { src: "photos/georgie/DSC01039.JPEG", category: "georgie", title: "Duel",       date: "2026" },
+  { src: "photos/georgie/DSC01132.JPEG", category: "georgie", title: "Intensité",  date: "2026" },
+  { src: "photos/georgie/DSC01432.JPEG", category: "georgie", title: "Percussion", date: "2026" },
+  { src: "photos/georgie/DSC01645.JPEG", category: "georgie", title: "Match",      date: "2026" },
+
   // — Graphisme —
   { src: "photos/graphisme/487661C2-9D51-44F3-A9D6-9649F123D9E1.PNG", category: "graphisme", title: "Visuel", date: "2026" },
 ];
@@ -113,6 +121,7 @@ const categoryLabels = {
   asvel:            "ASVEL",
   "ol-reserve":     "OL Réserve",
   "clermont-jeune": "Clermont Jeunes",
+  georgie:          "Géorgie",
   graphisme:        "Graphisme",
 };
 
