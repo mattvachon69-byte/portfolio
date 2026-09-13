@@ -188,8 +188,18 @@ function buildFilters() {
     btn.dataset.category = key;
     btn.textContent = label;
     btn.addEventListener("click", () => setFilter(key));
+    btn.addEventListener("mouseenter", () => preloadCategory(key));
     filtersContainer.appendChild(btn);
   });
+}
+
+const preloaded = new Set();
+function preloadCategory(category) {
+  if (preloaded.has(category)) return;
+  preloaded.add(category);
+  photos
+    .filter(p => p.category === category)
+    .forEach(p => { new Image().src = p.src; });
 }
 
 function setFilter(category) {
