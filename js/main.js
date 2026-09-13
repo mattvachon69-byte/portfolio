@@ -4,24 +4,23 @@
 // puis ajouter une entrée dans ce tableau.
 // ============================================================
 const photos = [
-  // — Page principale (mix tous sports) —
-  { src: "photos/principale/8C9D1B22-A074-4CA9-9C3F-E19021C2D015.JPEG", category: "principale", title: "Portrait",     date: "2026" },
+  // — Page principale (mix tous sports) — Dybala en premier —
+  { src: "photos/principale/DSC02742.JPEG",     category: "principale", title: "Dybala",           date: "2026" },
+  { src: "photos/principale/DSC02493.JPEG",     category: "principale", title: "Portrait",         date: "2026" },
+  { src: "photos/principale/DSC03193.JPEG",     category: "principale", title: "Intensité",        date: "2026" },
   { src: "photos/principale/DSC00674.JPEG",     category: "principale", title: "Clair-obscur",     date: "2026" },
   { src: "photos/principale/DSC01034.JPEG",     category: "principale", title: "Engagement",       date: "2026" },
-  { src: "photos/principale/DSC03803.JPEG",     category: "principale", title: "Intensité",        date: "2026" },
+  { src: "photos/principale/DSC03803.JPEG",     category: "principale", title: "Percussion",       date: "2026" },
   { src: "photos/principale/DSC05154.JPEG",     category: "principale", title: "Concentration",    date: "2026" },
   { src: "photos/principale/DSC06348 (1).JPEG", category: "principale", title: "Élan",             date: "2026" },
   { src: "photos/principale/DSC06739.JPEG",     category: "principale", title: "Impulsion",        date: "2026" },
   { src: "photos/principale/DSC06842.JPEG",     category: "principale", title: "Puissance",        date: "2026" },
-  { src: "photos/principale/DSC07285.JPEG",     category: "principale", title: "Détermination",    date: "2026" },
-  { src: "photos/principale/DSC07757.JPEG",     category: "principale", title: "Percussion",       date: "2026" },
-  { src: "photos/principale/DSC07791.JPEG",     category: "principale", title: "Engagement",       date: "2026" },
+  { src: "photos/principale/DSC07757.JPEG",     category: "principale", title: "Combat",           date: "2026" },
+  { src: "photos/principale/DSC07791.JPEG",     category: "principale", title: "Détermination",    date: "2026" },
   { src: "photos/principale/DSC08402.JPEG",     category: "principale", title: "Action",           date: "2026" },
   { src: "photos/principale/DSC08483.JPEG",     category: "principale", title: "Mouvement",        date: "2026" },
-  { src: "photos/principale/DSC08955.JPEG",     category: "principale", title: "Vitesse",          date: "2026" },
   { src: "photos/principale/DSC09019.JPEG",     category: "principale", title: "Effort",           date: "2026" },
-  { src: "photos/principale/DSC09033.JPEG",     category: "principale", title: "Engagement",       date: "2026" },
-  { src: "photos/principale/DSC09035.JPEG",     category: "principale", title: "Combat",           date: "2026" },
+  { src: "photos/principale/DSC09033.JPEG",     category: "principale", title: "Vitesse",          date: "2026" },
 
   // — Versailles —
   { src: "photos/versailles/DSC07181 - Copie.JPEG", category: "versailles", title: "Ouverture",    date: "2026" },
@@ -106,6 +105,23 @@ const photos = [
   { src: "photos/georgie/DSC01432.JPEG", category: "georgie", title: "Percussion", date: "2026" },
   { src: "photos/georgie/DSC01645.JPEG", category: "georgie", title: "Match",      date: "2026" },
 
+  // — AS Roma —
+  { src: "photos/as-roma/DSC02742.JPEG", category: "as-roma", title: "Dybala",          date: "2026" },
+  { src: "photos/as-roma/DSC02493.JPEG", category: "as-roma", title: "Portrait",         date: "2026" },
+  { src: "photos/as-roma/DSC02481.JPEG", category: "as-roma", title: "Concentration",    date: "2026" },
+  { src: "photos/as-roma/DSC02506.JPEG", category: "as-roma", title: "Engagement",       date: "2026" },
+  { src: "photos/as-roma/DSC02892.JPEG", category: "as-roma", title: "Intensité",        date: "2026" },
+  { src: "photos/as-roma/DSC02956.JPEG", category: "as-roma", title: "Action",           date: "2026" },
+  { src: "photos/as-roma/DSC03287.JPEG", category: "as-roma", title: "Pressing",         date: "2026" },
+  { src: "photos/as-roma/DSC03328.JPEG", category: "as-roma", title: "Détermination",    date: "2026" },
+  { src: "photos/as-roma/DSC03358.JPEG", category: "as-roma", title: "Combat",           date: "2026" },
+
+  // — AS Canne —
+  { src: "photos/as-canne/DSC02545.JPEG", category: "as-canne", title: "Engagement",     date: "2026" },
+  { src: "photos/as-canne/DSC03123.JPEG", category: "as-canne", title: "Duel",           date: "2026" },
+  { src: "photos/as-canne/DSC03140.JPEG", category: "as-canne", title: "Intensité",      date: "2026" },
+  { src: "photos/as-canne/DSC03193.JPEG", category: "as-canne", title: "Action",         date: "2026" },
+
   // — Graphisme —
   { src: "photos/graphisme/487661C2-9D51-44F3-A9D6-9649F123D9E1.PNG", category: "graphisme", title: "Visuel", date: "2026" },
 ];
@@ -115,6 +131,8 @@ const photos = [
 // ============================================================
 const categoryLabels = {
   principale:       "Tous",
+  "as-roma":        "AS Roma",
+  "as-canne":       "AS Canne",
   versailles:       "Versailles",
   duchere:          "Duchère",
   dijon:            "Dijon DFCO",
@@ -203,8 +221,12 @@ function renderGallery() {
     item.dataset.category = photo.category;
     item.dataset.index = realIndex;
 
+    const eager = i < 4;
     item.innerHTML = `
-      <img src="${photo.src}" alt="${photo.title}" loading="lazy">
+      <img src="${photo.src}" alt="${photo.title}"
+           loading="${eager ? 'eager' : 'lazy'}"
+           decoding="async"
+           ${eager ? 'fetchpriority="high"' : ''}>
       <div class="gallery-item-overlay">
         <div class="gallery-item-info">
           <h3>${photo.title}</h3>
@@ -285,6 +307,17 @@ function updateLightboxContent() {
   lightboxImg.src = photo.src;
   lightboxImg.alt = photo.title;
   lightboxCaption.textContent = photo.title;
+
+  // Précharger les images adjacentes
+  const visibleIndices = getVisibleIndices();
+  const pos = visibleIndices.indexOf(currentLightboxIndex);
+  [-1, 1].forEach(offset => {
+    const adjPos = pos + offset;
+    if (adjPos >= 0 && adjPos < visibleIndices.length) {
+      const adj = photos[visibleIndices[adjPos]];
+      if (adj) new Image().src = adj.src;
+    }
+  });
 }
 
 // ============================================================
